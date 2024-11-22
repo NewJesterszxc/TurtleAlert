@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings & Chart</title>
+
+    <script src="https://code.highcharts.com/stock/highstock.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <script src="/socket.io/socket.io.js"></script>
+    <div class="container">
+        <div class="settings-pane">
+            <h1>Settings</h1>
+            
+            <ul id="messages"></ul>
+            
+
+        </div>
+        <div class="chart-container">
+            <div id="chart" class="line-chart">
+                
+                <div id="Live"></div>
+                <script src="liveLineChart.js"></script>
+
+                <div id="mul"></div>
+                <script src="multiple.js"></script>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

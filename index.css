@@ -1,0 +1,57 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Settings Pane */
+.settings-pane {
+    width: 30%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.settings-pane h1 {
+    font-size: 24px;
+}
+
+/* Chart Container */
+.chart-container {
+    width: 70%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line-chart {
+    width: 100%;
+    height: 90%;
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+/* Adjustments for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .settings-pane,
+    .chart-container {
+        width: 100%;
+    }
+}
